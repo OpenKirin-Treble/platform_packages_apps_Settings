@@ -1021,8 +1021,7 @@ public class DevelopmentSettings extends RestrictedSettingsFragment
     }
 
     private static boolean showEnableOemUnlockPreference() {
-        return !SystemProperties.get(PERSISTENT_DATA_BLOCK_PROP).equals("") &&
-                SystemProperties.getBoolean("ro.oem_unlock_supported", false);
+        return false;
     }
 
     private boolean enableOemUnlockPreference() {
